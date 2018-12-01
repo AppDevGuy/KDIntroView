@@ -1,19 +1,21 @@
 PODS:
-  - KDIntroView (0.1.0)
+  - KDIntroView (1.2.0)
 
 DEPENDENCIES:
-  - KDIntroView (from `https://github.com/likedan/KDIntroView`)
+  - KDIntroView (from `https://github.com/AppDevGuy/KDIntroView`)
 
 EXTERNAL SOURCES:
   KDIntroView:
-    :git: https://github.com/likedan/KDIntroView
+    :git: https://github.com/AppDevGuy/KDIntroView
 
 CHECKOUT OPTIONS:
   KDIntroView:
-    :commit: ae46186f4e1d63a6cfcfcec93bc0c10b7bff5f15
-    :git: https://github.com/likedan/KDIntroView
+    :commit: 80d6eba39e980a2a0dbd4f94c08a227fa601e0bf
+    :git: https://github.com/AppDevGuy/KDIntroView
 
 SPEC CHECKSUMS:
-  KDIntroView: 3cf7a2af4a8da23e2f68492aff72421b24549eaa
+  KDIntroView: 9ae323477e8cca861fdf48388d156866d0c64e6e
 
-COCOAPODS: 0.38.0.beta.1
+PODFILE CHECKSUM: e59c585733efbe3abad8a872d15c698866ffe76e
+
+COCOAPODS: 1.5.3

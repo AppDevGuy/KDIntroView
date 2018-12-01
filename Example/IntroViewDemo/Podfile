@@ -1,17 +1,16 @@
 # Uncomment this line to define a global platform for your project
 
 source 'https://github.com/CocoaPods/Specs.git'
-platform :ios, '8.0'
+platform :ios, '11.0'
 
 workspace 'IntroViewDemo'
 
-xcodeproj 'IntroViewDemo'
+project 'IntroViewDemo'
 
 use_frameworks!
 
 target 'IntroViewDemo' do
-    xcodeproj 'IntroViewDemo'
-    
-    pod 'KDIntroView', :git => 'https://github.com/likedan/KDIntroView'
+    project 'IntroViewDemo'
+    pod 'KDIntroView', :git => 'https://github.com/AppDevGuy/KDIntroView'
 end
 

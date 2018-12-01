@@ -30,7 +30,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         let gestureReco = UIPanGestureRecognizer(target: self, action: #selector(KDIntroViewController.dragged(_:)))
         dragger.addGestureRecognizer(gestureReco)
         
-
+        
         view.addSubview(scroller)
         view.addSubview(dragger)
     }
@@ -65,7 +65,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
         }
         pageControl.numberOfPages = views.count
         view.addSubview(pageControl)
-
+        
         
     }
     
@@ -80,12 +80,12 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
     }
     
     
-    func dragged(_ recognizer : UIPanGestureRecognizer) {
+    @objc func dragged(_ recognizer : UIPanGestureRecognizer) {
         
         let translation = recognizer.translation(in: self.view)
         scroller.setContentOffset(CGPoint(x: view.frame.width * CGFloat(currentPageNum) - translation.x, y: 0), animated: false)
         
-        if recognizer.state == UIGestureRecognizerState.cancelled || recognizer.state == UIGestureRecognizerState.failed || recognizer.state == UIGestureRecognizerState.ended{
+        if recognizer.state == UIGestureRecognizer.State.cancelled || recognizer.state == UIGestureRecognizer.State.failed || recognizer.state == UIGestureRecognizer.State.ended{
             // should change page
             if abs(translation.x) > 30 {
                 if currentPageNum != 0 && translation.x > 0 {
@@ -127,7 +127,7 @@ open class KDIntroViewController: UIViewController, UIScrollViewDelegate{
             let difference = toIndex - fromIndex
             let fromColorComponent = fromColor.cgColor.components
             let toColorComponent = toColor.cgColor.components
-
+            
             let differenceInRed = ((toColorComponent?[0])! as CGFloat) - (fromColorComponent?[0])! as CGFloat
             let differenceInGreen = ((toColorComponent?[1])! as CGFloat) - (fromColorComponent?[1])! as CGFloat
             let differenceInBlue = ((toColorComponent?[2])! as CGFloat) - (fromColorComponent?[2])! as CGFloat

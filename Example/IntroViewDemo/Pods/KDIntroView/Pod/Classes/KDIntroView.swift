@@ -6,7 +6,6 @@
 //
 //
 
-
 import UIKit
 
 open class KDIntroView: UIView {
