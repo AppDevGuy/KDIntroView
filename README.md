@@ -9,7 +9,7 @@ To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KDIntroView'
+pod 'KDIntroView' , '1.3.0'
 ```
 or drag these files into the project
 
@@ -20,7 +20,7 @@ KDIntroViewController.swift
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-iOS 8.0
+iOS 11.0
 
 ## Introduction
 `KDIntroView` is a framework to create dynamic onboarding views(onboarding flows) for your iOS App. You can create all sorts of cool animations.

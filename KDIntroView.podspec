@@ -41,10 +41,10 @@ You can literally create any kind of animation! Play around with it, and free yo
                        * Markdown format.
                        * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/likedan/KDIntroView"
+  s.homepage         = "https://github.com/AppDevGuy/KDIntroView"
   s.license          = 'MIT'
   s.author           = { "likedan" => "likedan5@icloud.com" }
-  s.source           = { :git => "https://github.com/likedan/KDIntroView.git", :tag => "1.3.0" }
+  s.source           = { :git => "https://github.com/AppDevGuy/KDIntroView.git", :tag => "1.3.0" }
    s.social_media_url = 'http://takefiveinteractive.com'
 
   s.platform     = :ios, '11.0'
