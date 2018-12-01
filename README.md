@@ -2,6 +2,12 @@
 
 <img src="Imgs/showup.gif" width="320" height="550"/>
 
+## Swift 4.2 Version update. 
+
+Checkout v1.3.1 for the latest update catering to Swift 4.2. 
+
+Full credit to the original developer and contributers.  
+
 
 ## Installation
 
@@ -9,7 +15,7 @@ To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'KDIntroView' , '1.3.0'
+pod 'KDIntroView' , '1.3.1'
 ```
 or drag these files into the project
 
